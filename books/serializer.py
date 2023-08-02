@@ -17,10 +17,10 @@ class AuthorSerializer(serializers.Serializer):
 class CreateBooKSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ['id', 'title', 'isbn', 'genre', 'copies', 'author']
+        fields = ['title', 'isbn', 'genre', 'copies', 'author']
 
 
 class CreateAuthorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Author
-        fields = ['id', 'first_name', 'last_name', 'email']
+        fields = ['first_name', 'last_name', 'email']
